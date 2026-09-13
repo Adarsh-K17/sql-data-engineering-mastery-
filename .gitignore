@@ -1,3 +1,32 @@
+# DuckDB storage engines & write-ahead logs
+*.duckdb
+*.duckdb.wal
+*.db
+*.wal
+
+# Cloud & Local Environment Secrets
+.env
+*.env
+*token*
+motherduck_token.txt
+
+# Large local raw data extracts (keep raw CSVs in cloud storage)
+*.csv
+*.tsv
+*.parquet
+*.json
+!**/.gitkeep
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+
+# IDE & Editor caches
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -11,24 +40,11 @@ env/
 # Jupyter / notebooks
 .ipynb_checkpoints/
 
-# Data engineering outputs
-*.csv
-*.parquet
+# Data files
+*.sqlite3
 *.orc
 *.avro
 *.jsonl
-*.db
-*.sqlite3
-
-# Secrets and environment
-.env
-.env.*
-
-# OS / editor clutter
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
 
 # Logs
 *.log
